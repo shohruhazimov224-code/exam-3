@@ -1,0 +1,807 @@
+<<<<<<< HEAD
+
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+.footer-top {
+    background-color: #495567;
+    position: relative;
+    padding: 88px 0;
+    overflow: hidden;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    font-weight: 700;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.btn-store {
+    background-color: #FFFFFF;
+    color: #495567;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-store:hover {
+    background-color: #FCB72B;
+    color: #FFFFFF;
+}
+
+.store-icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.btn-text {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.store-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.bg-circles {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    display: flex;
+    gap: 20px;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border: 15px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+.footer-bottom {
+    background-color: #333A44;
+    padding: 32px 0;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-side {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-nav a {
+    color: #939CAA;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 32px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #FCB72B;
+}
+
+.social-links a {
+    color: #FCB72B;
+    font-size: 24px;
+    margin-left: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .top-content, .bottom-content, .nav-side {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .footer-nav a {
+        margin: 0 15px;
+    }
+
+    .social-links a {
+        margin: 0 12px;
+    }
+}
+=======
+/* Javohir o'z qismi css */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__btn {
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 102px;
+    height: 25px;
+    top: 14px;
+    left: 39px;
+    opacity: 1;
+    color: white;
+    background: #FCB72B;
+    padding: 8px;
+}
+
+.header__link {
+    color: #939CAA;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+
+
+}
+
+@media(max-width:550px) {
+    .header {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 90px;
+        justify-content: left;
+    }
+
+    .header__img {
+        width: 90px;
+        height: 30px;
+        top: 22px;
+        left: 150px;
+        opacity: 1;
+
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/hero\ laptop.jpg);
+    max-width: 1240px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__text {
+    width: 305px;
+    height: 50px;
+    top: 401px;
+    margin: 0;
+    left: 260px;
+    opacity: 1;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 80px;
+
+}
+
+.hero__strel2 {
+    margin-top: 200px;
+
+}
+
+.hero__strel {
+    margin-top: 120px;
+}
+
+.hero__heading {
+    width: 350px;
+    height: 25px;
+    font-size: 50px;
+    top: 249px;
+    left: 165px;
+    opacity: 1;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: -60px;
+}
+
+.hero__btn {
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 102px;
+    height: 25px;
+    top: 14px;
+    left: 39px;
+    opacity: 1;
+    color: white;
+    background: #FCB72B;
+    padding: 8px;
+}
+
+.hero__box {
+    max-width: 350px;
+    align-items: center;
+}
+
+@media(max-width:830px) {
+    .hero__strel {
+        display: none;
+        height: 800px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .hero {
+        background-image: url(../images/hero\ tablet.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero__box {
+        justify-content: center;
+        max-width: 575px;
+    }
+
+    .hero__strel2 {
+        margin-top: 100px;
+        margin-left: -500px;
+    }
+
+    .hero__heading {
+        width: 570px;
+        margin-left: 0;
+        height: 34px;
+        opacity: 1;
+        margin-top: 80px;
+    }
+
+    .hero__text {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+        height: 75px;
+        top: 369px;
+        left: 97px;
+        opacity: 1;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero__btn {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:540px) {
+    .hero__heading {
+        font-size: 40px;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .hero{
+        margin-top: 15px;
+        background-image: url(../images/hero\ mobile.png);
+    }
+    .hero__strel2{
+        width: 450px;
+        margin-left: -520px;
+    }
+
+    .hero__text {
+        width: 311px;
+        height: 125px;
+        top: 323px;
+        left: 32px;
+        opacity: 1;
+    }
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Lexend Deca", sans-serif;
+    background-image: url(../images/uzun\ strelka.png);
+    background-size: 100% 9px, cover;
+    background-position: center 90px, center;
+    background-repeat: no-repeat;
+}
+
+
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon__wrapper {
+    width: 35%;
+}
+
+.step-icon {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.step-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 12px 0;
+}
+
+.step-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #718096;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px;
+        position: relative;
+        background-image: url(../images/strelka\ tablet.png);
+        background-size: 14px 100%, cover;
+        background-position: 73px center, center;
+        background-repeat: no-repeat;
+    }
+
+    .enjoy__text {
+        width: 398px;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+
+    }
+
+    .step-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .icon-wrapper {
+        margin-bottom: 0;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+
+    .step-item h3 {
+        font-family: Space Mono;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+        color: #495567;
+
+    }
+}
+
+
+
+@media (max-width: 790px) {
+
+    /* Umumiy konteyner */
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 40px 20px;
+        background-image: none !important;
+    }
+
+    .step-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 24px;
+    }
+
+    .step-item h3 {
+        margin: 0 0 16px 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #2b3a4a;
+    }
+
+
+    .step-item  {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #7d8794;
+        max-width: 90%;
+    }
+
+    .enjoy__text {
+        width: 311px;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}
+
+/* Javohir o'z qismi tugashi */
+
+
+/* Shohruh's part */
+
+.intro__section{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 200px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.intro__title{
+    width: 445px;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: #495567;
+}
+
+.intro__text{
+    width: 445px;
+    height: 100px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #939CAA;
+    margin-bottom: 50px;
+}
+
+.intro__link{
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FCB72B;
+    border: 2px solid #FCB72B;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.intro__link:hover{
+    background-color: #FFFFFF;
+    color: #FCB72B;
+}
+
+.intro__wrapper{
+    position: relative;
+}
+
+.arrow__img{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.arrow__img__2{
+    width: 300px;
+    position: absolute;
+    left: -20px;
+    top: 30px;
+}
+
+.arrow__img__3{
+    position: absolute;
+    right: -30px;
+    top: 100px;
+}
+
+
+@media (max-width: 900px) {
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .intro__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .wrapper-3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .intro__wrapper__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__wrapper__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .arrow__img{
+        position: absolute;
+        width: 600px;
+        top: 100px;
+    }
+
+    .arrow__img__2{
+        position: absolute;
+        width: 350px;
+        left: 70px;
+    }
+
+    .arrow__img__3{
+        position: absolute;
+        width: 350px;
+        right: 70px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .intro__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .wrapper-3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .intro__wrapper__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__wrapper__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .arrow__img{
+        position: absolute;
+        width: 400px;
+        top: 150px;
+        right: -10px;
+    }
+
+    .arrow__img__2{
+        position: absolute;
+        width: 350px;
+        left: -20px;
+    }
+
+    .arrow__img__3{
+        position: absolute;
+        width: 350px;
+        right: -20px;
+    }
+
+    .intro__title{
+        width: 311px;
+        font-family: Space Mono;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        text-align: center;
+        color: #495567;
+    }
+
+    .intro__text{
+        width: 311px;
+        font-family: Space Mono;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        text-align: center;
+        color: #7d8794;
+        
+    }
+
+}
+
+/* intro end */
+
+/* shohruh's part */
+>>>>>>> 14f6e1294ea120a90c642527a0e7d161f30d39ed
