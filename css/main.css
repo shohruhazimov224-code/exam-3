@@ -1,0 +1,172 @@
+
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+.footer-top {
+    background-color: #495567;
+    position: relative;
+    padding: 88px 0;
+    overflow: hidden;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    font-weight: 700;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.btn-store {
+    background-color: #FFFFFF;
+    color: #495567;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-store:hover {
+    background-color: #FCB72B;
+    color: #FFFFFF;
+}
+
+.store-icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.btn-text {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.store-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.bg-circles {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    display: flex;
+    gap: 20px;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border: 15px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+.footer-bottom {
+    background-color: #333A44;
+    padding: 32px 0;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-side {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-nav a {
+    color: #939CAA;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 32px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #FCB72B;
+}
+
+.social-links a {
+    color: #FCB72B;
+    font-size: 24px;
+    margin-left: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .top-content, .bottom-content, .nav-side {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .footer-nav a {
+        margin: 0 15px;
+    }
+
+    .social-links a {
+        margin: 0 12px;
+    }
+}
